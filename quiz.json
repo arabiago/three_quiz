@@ -1,0 +1,384 @@
+[
+  {
+    "question": "ディレクトリの内容を表示するには？",
+    "choices": ["ls", "cd", "pwd"],
+    "answer": 0,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "現在のディレクトリを表示するには？",
+    "choices": ["mkdir", "pwd", "mv"],
+    "answer": 1,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "新しいディレクトリを作成するには？",
+    "choices": ["mkdir", "rmdir", "touch"],
+    "answer": 0,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "ディレクトリを移動するには？",
+    "choices": ["mv", "cd", "ls"],
+    "answer": 1,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "空のファイルを作成するには？",
+    "choices": ["rm", "touch", "cat"],
+    "answer": 1,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "ファイルを削除するには？",
+    "choices": ["cp", "mv", "rm"],
+    "answer": 2,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "ファイルをコピーするには？",
+    "choices": ["mv", "cp", "cd"],
+    "answer": 1,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "ファイルの名前を変更したいときに使うコマンドは？",
+    "choices": ["mv", "ls", "touch"],
+    "answer": 0,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "ディレクトリ構造をツリー状に表示するコマンドは？",
+    "choices": ["tree", "ls -a", "ps"],
+    "answer": 0,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "空のディレクトリを削除するには？",
+    "choices": ["rm -f", "rmdir", "chmod"],
+    "answer": 1,
+    "tags": ["ファイル・ディレクトリ操作"]
+  },
+  {
+    "question": "ファイルの中身を一気に表示したいときに使うコマンドは？",
+    "choices": ["cat", "nano", "cd"],
+    "answer": 0,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "長いファイルの内容をスクロールしながら確認したいときに使うコマンドは？",
+    "choices": ["tail", "less", "touch"],
+    "answer": 1,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "ファイルの先頭数行だけを確認したいときに使うコマンドは？",
+    "choices": ["nano", "head", "tree"],
+    "answer": 1,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "ファイルの末尾を確認し、さらに内容が更新されたら自動で表示されるようにしたいときは？",
+    "choices": ["tail -f", "head -r", "cat -w"],
+    "answer": 0,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "ターミナル上でテキストファイルを編集したいときに使うコマンドは？",
+    "choices": ["cd", "mv", "nano"],
+    "answer": 2,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "ファイルを編集する高機能エディタのひとつで、コマンドモードと挿入モードがあるのは？",
+    "choices": ["vim", "ls", "cat"],
+    "answer": 0,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "ファイルの末尾だけを確認したい場合に使うコマンドは？",
+    "choices": ["more", "head", "tail"],
+    "answer": 2,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "ファイルを読みながら「次のページ」「前のページ」とスクロールしたいときに使うのは？",
+    "choices": ["less", "cat", "ps"],
+    "answer": 0,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "複数ファイルの内容を一括で確認したいとき、横に連続して出力されるコマンドは？",
+    "choices": ["cat", "tail", "nano"],
+    "answer": 0,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "コマンドラインで直接ファイルを書き換えるために使える編集ツールは？",
+    "choices": ["pwd", "nano", "ls"],
+    "answer": 1,
+    "tags": ["ファイル内容の確認・編集"]
+  },
+  {
+    "question": "現在ログインしているユーザー名を確認するコマンドは？",
+    "choices": ["whoami", "id", "pwd"],
+    "answer": 0,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "ユーザーID（UID）やグループ情報を確認したいときに使うコマンドは？",
+    "choices": ["chmod", "id", "ls"],
+    "answer": 1,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "ファイルやディレクトリのアクセス権（パーミッション）を変更するコマンドは？",
+    "choices": ["chmod", "chown", "cat"],
+    "answer": 0,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "ファイルやディレクトリの所有者を変更するコマンドは？",
+    "choices": ["chmod", "mv", "chown"],
+    "answer": 2,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "別のユーザーに切り替えるコマンドは？",
+    "choices": ["su", "id", "sudo"],
+    "answer": 0,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "一時的に管理者権限（root権限）でコマンドを実行したいときに使うコマンドは？",
+    "choices": ["su", "sudo", "chmod"],
+    "answer": 1,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "パーミッションを変更する chmod コマンドで、実行権を与える記号は？",
+    "choices": ["-", "+x", "=w"],
+    "answer": 1,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "所有者とグループを同時に変更できるコマンドは？",
+    "choices": ["chmod", "su", "chown"],
+    "answer": 2,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "一般ユーザーがシステムファイルを編集するにはどのコマンドを前につける？",
+    "choices": ["su", "sudo", "cd"],
+    "answer": 1,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "su で root に切り替えたあと、戻るにはどうする？",
+    "choices": ["exit", "logout", "shutdown"],
+    "answer": 0,
+    "tags": ["ユーザー・権限管理"]
+  },
+  {
+    "question": "Ubuntuでパッケージ情報（リスト）を更新するコマンドは？",
+    "choices": ["apt upgrade", "apt update", "apt install"],
+    "answer": 1,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "Ubuntuでシステム上のインストール済みパッケージをアップデートするには？",
+    "choices": ["apt update", "apt install", "apt upgrade"],
+    "answer": 2,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "Debian系で新しいソフトウェアをインストールするコマンドは？",
+    "choices": ["apt install", "yum install", "dnf install"],
+    "answer": 0,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "Ubuntuでインストール済みパッケージを削除したいときのコマンドは？",
+    "choices": ["apt remove", "apt delete", "apt purge"],
+    "answer": 0,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "RHELやCentOSでパッケージをインストールするコマンドは？",
+    "choices": ["apt install", "dnf install", "yum remove"],
+    "answer": 1,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "CentOSで既存のパッケージを最新に更新するには？",
+    "choices": ["yum update", "dnf upgrade", "apt update"],
+    "answer": 0,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "CentOSでソフトウェアをアンインストールするコマンドは？",
+    "choices": ["dnf delete", "yum install", "dnf remove"],
+    "answer": 2,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "Ubuntuで curl をインストールしたい。正しいコマンドは？",
+    "choices": ["apt get curl", "apt install curl", "sudo curl install"],
+    "answer": 1,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "APTコマンドでまず最初に行うべきこと（リポジトリ更新）は？",
+    "choices": ["apt install", "apt update", "apt clean"],
+    "answer": 1,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "RHEL系で nano をインストールしたいときの正しいコマンドは？",
+    "choices": ["yum install nano", "apt install nano", "nano get"],
+    "answer": 0,
+    "tags": ["パッケージ管理"]
+  },
+  {
+    "question": "現在のIPアドレスを確認するためのコマンドは？",
+    "choices": ["ip a", "cd", "chmod"],
+    "answer": 0,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "特定のアドレスに接続できるかどうかを調べるために使うコマンドは？",
+    "choices": ["wget", "ping", "df"],
+    "answer": 1,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "ウェブサイトなどのURLからHTMLやデータを取得するコマンドは？",
+    "choices": ["curl", "nano", "ps"],
+    "answer": 0,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "ネット上のファイルを直接ダウンロードしたいときに使うコマンドは？",
+    "choices": ["mv", "wget", "ls"],
+    "answer": 1,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "使用中のポートや接続状況を確認したいときに使うコマンドは？",
+    "choices": ["ss", "ping", "mkdir"],
+    "answer": 0,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "pingコマンドで送信するデフォルトのICMPパケット数は？（※Linux標準）",
+    "choices": ["4回", "無限", "1回"],
+    "answer": 1,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "curl と wget の主な違いはどれ？",
+    "choices": [
+      "curlはテキスト表示、wgetはファイル保存向き",
+      "両方同じ",
+      "curlはpingの代替"
+    ],
+    "answer": 0,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "ip a を使うと、何の情報が得られる？",
+    "choices": [
+      "ディスク使用状況",
+      "現在のネットワークインターフェースとIPアドレス",
+      "CPU温度"
+    ],
+    "answer": 1,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "通信ポートが開いているか確認したいとき、どのコマンドを使う？",
+    "choices": ["ss", "pwd", "touch"],
+    "answer": 0,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "pingコマンドで応答がない場合、可能性として正しいのは？",
+    "choices": [
+      "相手がスリープ中",
+      "ファイルが存在しない",
+      "ネットワークかファイアウォールの問題"
+    ],
+    "answer": 2,
+    "tags": ["ネットワーク管理"]
+  },
+  {
+    "question": "現在のLinuxカーネルやOS情報を確認するコマンドは？",
+    "choices": ["uname -a", "df -h", "uptime"],
+    "answer": 0,
+    "tags": ["システム情報確認"]
+  },
+  {
+    "question": "システムの稼働時間やログインユーザー数を確認できるコマンドは？",
+    "choices": ["whoami", "uptime", "ps aux"],
+    "answer": 1,
+    "tags": ["システム情報確認"]
+  },
+  {
+    "question": "CPUやメモリなどの使用状況をリアルタイムで監視できるコマンドは？",
+    "choices": ["top", "ls", "cd"],
+    "answer": 0,
+    "tags": ["システム情報確認"]
+  },
+  {
+    "question": "現在実行中のすべてのプロセスをリスト表示するコマンドは？",
+    "choices": ["free -h", "ps aux", "whoami"],
+    "answer": 1,
+    "tags": ["システム情報確認"]
+  },
+  {
+    "question": "ディスク使用量（容量・空き容量）を人間に読みやすい単位で確認するには？",
+    "choices": ["df -h", "du", "chmod"],
+    "answer": 0,
+    "tags": ["システム情報確認"]
+  },
+  {
+    "question": "メモリの使用状況（使用量、空き容量）を確認するコマンドは？",
+    "choices": ["free -h", "df -h", "cat /proc/cpuinfo"],
+    "answer": 0,
+    "tags": ["システム情報確認"]
+  },
+  {
+    "question": "htop コマンドの特徴はどれ？",
+    "choices": [
+      "古くて非推奨",
+      "視覚的に使いやすいプロセス監視ツール",
+      "ファイル検索ツール"
+    ],
+    "answer": 1,
+    "tags": ["システム情報確認"]
+  },
+  {
+    "question": "稼働時間を確認できるコマンドはどれ？",
+    "choices": ["uptime", "top", "ps"],
+    "answer": 0,
+    "tags": ["システム情報確認"]
+  },
+  {
+    "question": "ディスク使用量を確認する際の -h オプションの意味は？",
+    "choices": [
+      "非表示モード",
+      "ハードディスク情報のみ",
+      "人間が読みやすい形式（GB, MB）"
+    ],
+    "answer": 2,
+    "tags": ["システム情報確認"]
+  },
+  {
+    "question": "CPU使用率やロードアベレージなどを常時監視する代表的なコマンドは？",
+    "choices": ["ps aux", "top", "whoami"],
+    "answer": 1,
+    "tags": ["システム情報確認"]
+  }
+
+]
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linuxコマンド一覧</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="commandlist">
+  <h1>🔧 Linux基本コマンド一覧</h1>
+  <button onclick="location.href='index.html'">トップページへ戻る</button>
+
+  <div class="category">
+    <h2>🔍 1. ファイル・ディレクトリ操作</h2>
+    <table>
+      <tr><th>コマンド</th><th>説明</th></tr>
+      <tr><td>ls</td><td>ディレクトリの内容を表示（ls -l, ls -a）</td></tr>
+      <tr><td>cd</td><td>ディレクトリを移動（cd /home/naoto）</td></tr>
+      <tr><td>pwd</td><td>現在のディレクトリを表示</td></tr>
+      <tr><td>mkdir</td><td>新しいディレクトリを作成</td></tr>
+      <tr><td>rmdir</td><td>空のディレクトリを削除</td></tr>
+      <tr><td>touch</td><td>空のファイルを作成</td></tr>
+      <tr><td>cp</td><td>ファイル・ディレクトリをコピー</td></tr>
+      <tr><td>mv</td><td>ファイル・ディレクトリを移動（名前変更も）</td></tr>
+      <tr><td>rm</td><td>ファイル・ディレクトリを削除（rm -r, rm -f）</td></tr>
+      <tr><td>tree</td><td>ディレクトリ構造をツリー表示（要インストール）</td></tr>
+    </table>
+  </div>
+
+  <div class="category">
+    <h2>📄 2. ファイル内容の確認・編集</h2>
+    <table>
+      <tr><th>コマンド</th><th>説明</th></tr>
+      <tr><td>cat</td><td>ファイル内容を表示</td></tr>
+      <tr><td>less / more</td><td>長いファイルをページ単位で表示</td></tr>
+      <tr><td>head / tail</td><td>ファイルの先頭・末尾を表示（tail -fはリアルタイム監視）</td></tr>
+      <tr><td>nano / vi / vim</td><td>テキストファイルを編集</td></tr>
+    </table>
+  </div>
+
+  <div class="category">
+    <h2>👤 3. ユーザー・権限管理</h2>
+    <table>
+      <tr><th>コマンド</th><th>説明</th></tr>
+      <tr><td>whoami</td><td>現在のユーザーを表示</td></tr>
+      <tr><td>id</td><td>UIDや所属グループを表示</td></tr>
+      <tr><td>chmod</td><td>パーミッション（アクセス権）を変更</td></tr>
+      <tr><td>chown</td><td>所有者を変更</td></tr>
+      <tr><td>su</td><td>ユーザーを切り替え</td></tr>
+      <tr><td>sudo</td><td>管理者権限でコマンドを実行</td></tr>
+    </table>
+  </div>
+
+  <div class="category">
+    <h2>📦 4. パッケージ管理</h2>
+    <h3>Debian/Ubuntu系（APT）</h3>
+    <table>
+      <tr><th>コマンド</th><th>説明</th></tr>
+      <tr><td>apt update</td><td>パッケージ情報を更新</td></tr>
+      <tr><td>apt upgrade</td><td>パッケージをアップデート</td></tr>
+      <tr><td>apt install パッケージ名</td><td>パッケージをインストール</td></tr>
+      <tr><td>apt remove パッケージ名</td><td>パッケージを削除</td></tr>
+    </table>
+
+    <h3>RHEL/CentOS系（dnf / yum）</h3>
+    <table>
+      <tr><th>コマンド</th><th>説明</th></tr>
+      <tr><td>dnf update / yum update</td><td>システム全体を更新</td></tr>
+      <tr><td>dnf install パッケージ名</td><td>インストール</td></tr>
+      <tr><td>dnf remove パッケージ名</td><td>削除</td></tr>
+    </table>
+  </div>
+
+  <div class="category">
+    <h2>🌐 5. ネットワーク関連</h2>
+    <table>
+      <tr><th>コマンド</th><th>説明</th></tr>
+      <tr><td>ip a / ifconfig</td><td>IPアドレス確認</td></tr>
+      <tr><td>ping アドレス</td><td>ネットワーク接続テスト</td></tr>
+      <tr><td>curl</td><td>URLからデータ取得</td></tr>
+      <tr><td>wget</td><td>ファイルをダウンロード</td></tr>
+      <tr><td>netstat / ss</td><td>ポートや接続の確認</td></tr>
+    </table>
+  </div>
+
+  <div class="category">
+    <h2>🧠 6. システム情報確認</h2>
+    <table>
+      <tr><th>コマンド</th><th>説明</th></tr>
+      <tr><td>uname -a</td><td>カーネルなどの情報表示</td></tr>
+      <tr><td>top / htop</td><td>リアルタイムのプロセス情報（htopは見やすく要インストール）</td></tr>
+      <tr><td>ps aux</td><td>現在のプロセス一覧</td></tr>
+      <tr><td>df -h</td><td>ディスク使用状況</td></tr>
+      <tr><td>free -h</td><td>メモリ使用状況</td></tr>
+      <tr><td>uptime</td><td>稼働時間の確認</td></tr>
+    </table>
+  </div>
+
+  <div class="category">
+    <h2>📝 7. ログと履歴</h2>
+    <table>
+      <tr><th>コマンド</th><th>説明</th></tr>
+      <tr><td>history</td><td>コマンド履歴表示</td></tr>
+      <tr><td>journalctl</td><td>システムログの閲覧（systemd）</td></tr>
+      <tr><td>dmesg</td><td>カーネルメッセージの表示</td></tr>
+      <tr><td>last</td><td>最近ログインしたユーザーを表示</td></tr>
+    </table>
+  </div>
+
+  <div class="category">
+    <h2>🔁 8. その他便利系</h2>
+    <table>
+      <tr><th>コマンド</th><th>説明</th></tr>
+      <tr><td>man コマンド名</td><td>マニュアルを見る</td></tr>
+      <tr><td>alias</td><td>コマンドの別名設定</td></tr>
+      <tr><td>date</td><td>日付と時刻を表示</td></tr>
+      <tr><td>cal</td><td>カレンダーを表示</td></tr>
+      <tr><td>clear</td><td>画面をクリア</td></tr>
+      <tr><td>exit</td><td>セッション終了（ログアウト）</td></tr>
+    </table>
+  </div>
+
+  <div class="menu-buttons">
+  <button onclick="location.href='index.html'">トップページへ戻る</button>
+  </div>
+
+</body>
+</html>

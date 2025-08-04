@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>クイズカテゴリ選択</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="index fullscreen-bg">
+
+  <h1>Linuxコマンド クイズ</h1>
+  <p>カテゴリを選んでください</p>
+  <div id="categories"></div>
+
+  <div class="menu-buttons">
+    <button onclick="location.href='linux_commands.html'">コマンド一覧</button>
+    <button onclick="location.href='score.html'">最近のスコア</button>
+  </div>
+
+  <script>
+    const categories = [
+      "ファイル・ディレクトリ操作",
+      "ファイル内容の確認・編集",
+      "ユーザー・権限管理",
+      "パッケージ管理",
+      "ネットワーク管理",
+      "システム情報確認"
+    ];
+
+    const container = document.getElementById("categories");
+    categories.forEach(cat => {
+      const btn = document.createElement("div");
+      btn.className = "category-button";
+      btn.textContent = cat;
+      btn.onclick = () => {
+        localStorage.setItem("selectedCategory", cat);
+        location.href = "quiz.html";
+      };
+      container.appendChild(btn);
+    });
+  </script>
+
+</body>
+</html>

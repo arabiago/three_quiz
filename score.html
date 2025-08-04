@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>スコア履歴</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="score fullscreen-bg">
+  <h1>スコア履歴</h1>
+  <div id="history"></div>
+
+  <script>
+    const rawData = JSON.parse(localStorage.getItem("quiz_scores") || "{}");
+    const container = document.getElementById("history");
+
+    let allScores = [];
+
+    // カテゴリごとのデータをひとまとめに変換
+    for (const category in rawData) {
+      const records = rawData[category];
+      records.forEach(entry => {
+        allScores.push({
+          category: category,
+          date: entry.date,
+          score: entry.score,
+          total: entry.total
+        });
+      });
+    }
+
+    if (allScores.length === 0) {
+      container.innerHTML = "<p>履歴がありません。</p>";
+    } else {
+      // 日付で降順ソートし、最新10件だけ表示
+      allScores.sort((a, b) => new Date(b.date) - new Date(a.date));
+      const latest = allScores.slice(0, 10);
+
+      const tableRows = latest.map(s =>
+        `<tr>
+          <td>${s.date}</td>
+          <td>${s.category}</td>
+          <td>${s.score} / ${s.total}</td>
+        </tr>`
+      ).join("");
+
+      container.innerHTML = `
+        <table class="score-table">
+          <thead>
+            <tr><th>日時</th><th>カテゴリ</th><th>スコア</th></tr>
+          </thead>
+          <tbody>
+            ${tableRows}
+          </tbody>
+        </table>
+      `;
+    }
+  </script>
+
+  <div class="menu-buttons">
+    <button onclick="location.href='index.html'">トップページへ戻る</button>
+  </div>
+</body>
+</html>
