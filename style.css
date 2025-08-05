@@ -165,3 +165,58 @@ table.score-table td {
 table.score-table th {
   background-color: rgba(234, 247, 51, 0.9);
 }
+
+/* ===== レスポンシブ対応（共通） ===== */
+@media (max-width: 600px) {
+  body.index,
+  body.score,
+  body.quiz {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  #categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-buttons button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .choices button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  table,
+  table.score-table {
+    font-size: 14px;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+}
