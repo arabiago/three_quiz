@@ -220,3 +220,30 @@ table.score-table th {
     display: block;
   }
 }
+
+@media (max-width: 600px) {
+  body.quiz {
+    padding: 20px;
+    font-size: 16px; /* ベースフォントを拡大 */
+  }
+
+  .quiz-container {
+    font-size: 1em;
+  }
+
+  .question {
+    font-size: 1.2em;
+  }
+
+  .choices button {
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  .menu-buttons button {
+    font-size: 1em;
+    padding: 12px;
+    width: 100%;
+    max-width: 300px;
+  }
+}
